@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Queries to Actual Servers</title>
+</head>
+
+<body>
+    <h1>Reddit Search</h1>
+    <form action="https://www.reddit.com/search">
+
+        <label for="search">Search Reddit</label>
+        <input type="text" name="q" id="search">
+    </form>
+    <p></p>
+    <form action="https://www.google.com/search">
+
+        <label for="search">Search Google</label>
+        <input type="text" name="q" id="search">
+    </form>
+
+    <form action="/checks">
+        <input type="checkbox" name="agree" id="tc" checked>
+        <label for="agree">Yes</label>
+
+        <input type="checkbox" name="disagree" id="tc1">
+        <label for="agree">No</label>
+
+
+        <button>Submit</button>
+
+    </form>
+
+    <form action="/picks">
+
+        <p>
+
+
+            <label for="b">Black</label>
+            <input type="radio" name="race" id="b" value="Black">
+        </p>
+
+        <p>
+            <label for="w">White</label>
+            <input type="radio" name="race" id="w" value="White">
+        </p>
+        <p>
+            <label for="m">Mexican</label>
+            <input type="radio" name="race" id="m" value="Mexican">
+        </p>
+
+
+        <p>
+
+            <label for="pets">Selct your favourite pet</label>
+            <select name="pets" id="pet-select">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="goldfish">Goldfish</option>
+
+            </select>
+
+        </p>
+
+        <p>
+            <label for="vol">Volume</label>
+            <input type="range" name="volume" id="vol" min="-32" max="10" value="0" step="2">
+
+        </p>
+
+        <p>
+
+            <label for="lifestory">Tell us about yourself</label><br>
+            <textarea name="self" id="lifestory" cols="30" rows="10"></textarea>
+        </p>
+        <button>Submit</button>
+
+    </form>
+
+
+    <form action="/action1">
+        <p>
+            <label for="username">Username :</label>
+            <input type="text" placeholder="Enter some text" id="username" name="user" required minlength="5"
+                maxlength="15">
+        </p>
+        <p>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="Enter a password" id="password" name="password" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address</label>
+            <input type="email" name="" id="" required>
+        </p>
+
+
+        <button>Submit</button>
+    </form>
+
+
+</body>
+
+</html>
